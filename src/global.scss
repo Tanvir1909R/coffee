@@ -127,6 +127,23 @@ body {
   background-color: var(--black);
   color: white;
   transition: all 0.3s;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+}
+.navActive{
+  padding: 1rem calc((100vw - 1000px) / 2);
+  .nav_wrapper {
+    .logo {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 185px;
+      }
+    }
+  } 
 }
 .nav_wrapper {
   padding: 1rem;
@@ -152,6 +169,7 @@ body {
   .logo {
     position: absolute;
     top: -55px;
+    transition: all .4s;
     left: 50%;
     transform: translateX(-50%);
     img {
@@ -411,7 +429,7 @@ body {
     text-align: center;
     width: 50%;
     background: #00000094;
-    padding: 3rem 2rem 3rem 20rem;
+    padding: 3rem 2rem 3rem 15rem;
     border-radius: 10px;
     h1 {
       color: white;
@@ -440,6 +458,15 @@ body {
     display: flex;
     .date {
       margin-left: 50px;
+      h1{
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      p{
+        color: #b1b1b1;
+      }
     }
   }
 }

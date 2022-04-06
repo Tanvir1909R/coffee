@@ -8,6 +8,13 @@ import SlideSection from "./components/SlideSection";
 function App() {
   const barsHandle = useRef() as MutableRefObject<HTMLDivElement>
   const menuHandles = useRef() as MutableRefObject<HTMLDivElement>
+  const navSec = useRef() as MutableRefObject<HTMLDivElement>
+  window.addEventListener('scroll',()=>{
+    let navBar = navSec.current;
+    if(window.innerWidth > 786){
+      navBar.classList.toggle('navActive',window.scrollY > 789)
+    }
+  })
   const menuHandle = ()=>{
     let bars = barsHandle.current;
     let menu = menuHandles.current
@@ -17,7 +24,7 @@ function App() {
   return (
     <>
       <SlideSection />
-      <section className="navbar">
+      <section className="navbar" ref={navSec}>
         <div className="nav_wrapper">
           <div className="menu" ref={menuHandles}>
             <a href="/">HOME</a>
