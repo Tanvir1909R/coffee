@@ -379,9 +379,6 @@ body {
 }
 
 @media (max-width: 1089px) {
-  .type_animation {
-    width: 470px;
-  }
   .about_text {
     p {
       font-size: clamp(0.7rem, 2vw, 0.9rem);
@@ -430,7 +427,8 @@ body {
     width: 50%;
     background: #00000094;
     padding: 3rem 2rem 3rem 15rem;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     h1 {
       color: white;
       font-weight: 800;
@@ -466,6 +464,23 @@ body {
       }
       p{
         color: #b1b1b1;
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .reserv_wrapper {
+    flex-direction: column;
+    .reserv {
+      width: 100%;
+      padding: 3rem 1rem;
+    }
+    .opentime {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      .date {
+        margin-left: 0px;
       }
     }
   }
