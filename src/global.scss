@@ -169,7 +169,7 @@ body {
   .logo {
     position: absolute;
     top: -55px;
-    transition: all .4s;
+    transition: all .6s;
     left: 50%;
     transform: translateX(-50%);
     img {
@@ -417,6 +417,7 @@ body {
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: center;
+  margin-bottom: 7rem;
 }
 .reserv_wrapper {
   display: flex;

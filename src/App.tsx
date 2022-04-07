@@ -2,6 +2,7 @@
 
 import { MutableRefObject, useRef } from "react";
 import AboutSec from "./components/AboutSec";
+import Menu from "./components/Menu";
 import Reserv from "./components/Reserv";
 import SlideSection from "./components/SlideSection";
 
@@ -46,6 +47,7 @@ function App() {
       </section>
       <AboutSec />
       <Reserv/>
+      <Menu />
     </>
   );
 }
