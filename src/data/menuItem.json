@@ -1,0 +1,62 @@
+[
+    {
+        "item":"Coffee",
+        "price":"$ 2",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Juice",
+        "price":"$ 2",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Iced Coff",
+        "price":"$ 3",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Milk",
+        "price":"$ 2",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Hot Chocolate",
+        "price":"$ 4",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Chocolate Milk",
+        "price":"$ 2",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Iced Tea",
+        "price":"$ 3",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Pancakes",
+        "price":"$ 20",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Hot Tea",
+        "price":"$ 3",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Eggs Porto",
+        "price":"$ 3",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Soda",
+        "price":"$ 2",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "item":"Smashed Avocado",
+        "price":"$ 5",
+        "dec":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]
