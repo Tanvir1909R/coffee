@@ -592,3 +592,19 @@ body {
     }
   }
 }
+@media (max-width:1193px){
+  .menu_sec_Wrapper{
+    padding: 0 2rem;
+  }
+}
+@media (max-width:768px){
+  .items {
+    padding: 0rem calc((100vw - 1200px) / 2);
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+  .menu_sec_Wrapper{
+    padding: 0 1rem;
+  }
+}
