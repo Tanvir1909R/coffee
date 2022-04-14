@@ -1,6 +1,6 @@
 
-
 import { MutableRefObject, useRef } from "react";
+import {BiUpArrow} from 'react-icons/bi'
 import AboutSec from "./components/AboutSec";
 import Menu from "./components/Menu";
 import Reserv from "./components/Reserv";
@@ -10,10 +10,17 @@ function App() {
   const barsHandle = useRef() as MutableRefObject<HTMLDivElement>
   const menuHandles = useRef() as MutableRefObject<HTMLDivElement>
   const navSec = useRef() as MutableRefObject<HTMLDivElement>
+  const to_top = useRef<HTMLAnchorElement>(null)
   window.addEventListener('scroll',()=>{
     let navBar = navSec.current;
+    let toTopBtn = to_top.current
     if(window.innerWidth > 786){
       navBar.classList.toggle('navActive',window.scrollY > 789)
+    }
+    if(window.scrollY > 789){
+      toTopBtn?.classList.add('toTop_active');
+    }else{
+      toTopBtn?.classList.remove('toTop_active');
     }
   })
   const menuHandle = ()=>{
@@ -22,8 +29,17 @@ function App() {
     bars.classList.toggle('bars_active');
     menu.classList.toggle('menu_active');
   }
+  const toTopHandle = ()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
   return (
     <>
+      <a className="to_top" ref={to_top} onClick={toTopHandle}>
+        <BiUpArrow />
+      </a>
       <SlideSection />
       <section className="navbar" ref={navSec}>
         <div className="nav_wrapper">

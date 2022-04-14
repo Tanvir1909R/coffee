@@ -29,6 +29,7 @@ function Menu() {
             );
           })}
         </div>
+        <button>WHERE WE ARE</button>
       </div>
     </section>
   );
