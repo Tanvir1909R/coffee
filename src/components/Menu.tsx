@@ -1,4 +1,5 @@
 import menuItem from "./../data/menuItem.json";
+import item_img from "../data/item_img.json";
 
 function Menu() {
   return (
@@ -21,15 +22,22 @@ function Menu() {
                   <h4> {item.price} </h4>
                 </div>
                 <div className="item_dec">
-                  <p>
-                    {item.dec}
-                  </p>
+                  <p>{item.dec}</p>
                 </div>
               </div>
             );
           })}
         </div>
         <button>WHERE WE ARE</button>
+        <div className="items_img">
+          {item_img.map((item, index) => {
+            return (
+              <div className="item_img" key={index}>
+                <img src={item.img} alt="coffee" />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
