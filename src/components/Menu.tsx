@@ -1,5 +1,6 @@
 import menuItem from "./../data/menuItem.json";
 import item_img from "../data/item_img.json";
+import {GoPlus} from 'react-icons/go'
 
 function Menu() {
   return (
@@ -34,6 +35,9 @@ function Menu() {
             return (
               <div className="item_img" key={index}>
                 <img src={item.img} alt="coffee" />
+                <div className="plus">
+                  <GoPlus />
+                </div>
               </div>
             );
           })}
