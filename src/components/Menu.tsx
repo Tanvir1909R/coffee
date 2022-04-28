@@ -30,6 +30,7 @@ function Menu() {
           })}
         </div>
         <button>WHERE WE ARE</button>
+      </div>
         <div className="items_img">
           {item_img.map((item, index) => {
             return (
@@ -42,7 +43,6 @@ function Menu() {
             );
           })}
         </div>
-      </div>
     </section>
   );
 }
