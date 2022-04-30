@@ -13,7 +13,7 @@ function NewsEvents() {
         <div className="news_feed">
           {newsData.map((item, indx) => {
             return (
-              <div className="news">
+              <div className="news" key={indx}>
                 <h1>{item.title}</h1>
                 <h4>{item.date}</h4>
                 <p>
@@ -24,6 +24,7 @@ function NewsEvents() {
             );
           })}
         </div>
+        <button className="btn">VIEW MORE</button>
       </div>
     </section>
   );
