@@ -2,6 +2,7 @@
 import { MutableRefObject, useRef } from "react";
 import {BiUpArrow} from 'react-icons/bi'
 import AboutSec from "./components/AboutSec";
+import Footer from "./components/Footer";
 import Map from "./components/Map";
 import Menu from "./components/Menu";
 import NewsEvents from "./components/NewsEvents";
@@ -68,6 +69,7 @@ function App() {
       <Menu />
       <NewsEvents />
       <Map />
+      <Footer />
     </>
   );
 }
